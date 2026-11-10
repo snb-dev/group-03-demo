@@ -1,0 +1,9 @@
+tests/test_core.py::test_phase_shift_recovers_phase PASSED               [ 12%]
+tests/test_core.py::test_reconstruction_depth_within_half_mm PASSED      [ 25%]
+tests/test_core.py::test_plate_solver_matches_exact_solution PASSED      [ 37%]
+tests/test_core.py::test_flat_panel_is_suitable_and_deep_crease_is_not PASSED [ 50%]
+tests/test_core.py::test_yield_line_force_example PASSED                 [ 62%]
+tests/test_core.py::test_method_selection_rules PASSED                   [ 75%]
+tests/test_core.py::test_conformal_coverage PASSED                       [ 87%]
+tests/test_core.py::test_api_end_to_end PASSED                           [100%]
+============================== 8 passed in 0.91s ===============================

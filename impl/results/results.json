@@ -1,0 +1,192 @@
+{
+ "reconstruction": [
+  {
+   "true_depth": 1.014,
+   "measured_depth": 1.02,
+   "depth_error": 0.006,
+   "map_mae": 0.0015,
+   "radius": 40,
+   "distance_error_pct": 0.5
+  },
+  {
+   "true_depth": 2.008,
+   "measured_depth": 2.039,
+   "depth_error": 0.031,
+   "map_mae": 0.0028,
+   "radius": 30,
+   "distance_error_pct": 1.59
+  },
+  {
+   "true_depth": 3.014,
+   "measured_depth": 3.05,
+   "depth_error": 0.035,
+   "map_mae": 0.0055,
+   "radius": 45,
+   "distance_error_pct": 1.1
+  },
+  {
+   "true_depth": 4.003,
+   "measured_depth": 3.958,
+   "depth_error": 0.045,
+   "map_mae": 0.0031,
+   "radius": 25,
+   "distance_error_pct": -1.1
+  },
+  {
+   "true_depth": 5.006,
+   "measured_depth": 4.965,
+   "depth_error": 0.041,
+   "map_mae": 0.0042,
+   "radius": 35,
+   "distance_error_pct": -0.8
+  },
+  {
+   "true_depth": 6.005,
+   "measured_depth": 6.095,
+   "depth_error": 0.09,
+   "map_mae": 0.0058,
+   "radius": 28,
+   "distance_error_pct": 1.49
+  },
+  {
+   "true_depth": 7.004,
+   "measured_depth": 6.866,
+   "depth_error": 0.138,
+   "map_mae": 0.0167,
+   "radius": 40,
+   "distance_error_pct": -1.98
+  },
+  {
+   "true_depth": 8.002,
+   "measured_depth": 8.105,
+   "depth_error": 0.103,
+   "map_mae": 0.0045,
+   "radius": 22,
+   "distance_error_pct": 1.28
+  },
+  {
+   "true_depth": 9.005,
+   "measured_depth": 9.11,
+   "depth_error": 0.105,
+   "map_mae": 0.0085,
+   "radius": 32,
+   "distance_error_pct": 1.19
+  },
+  {
+   "true_depth": 10.003,
+   "measured_depth": 9.992,
+   "depth_error": 0.011,
+   "map_mae": 0.0022,
+   "radius": 38,
+   "distance_error_pct": -0.13
+  }
+ ],
+ "reconstruction_summary": {
+  "mean_abs_depth_error_mm": 0.061,
+  "max_abs_depth_error_mm": 0.138,
+  "r2": 0.9993
+ },
+ "plate_verification": [
+  {
+   "point_numeric": 0.08142248179132816,
+   "point_exact": 0.0791714640380602,
+   "point_error_pct": 2.843218551807784,
+   "uniform_numeric": 0.016260981817614942,
+   "uniform_exact": 0.015545280612244902,
+   "uniform_error_pct": 4.6039773949547556,
+   "h_mm": 2.0
+  },
+  {
+   "point_numeric": 0.08033915134733467,
+   "point_exact": 0.0791714640380602,
+   "point_error_pct": 1.4748840677155142,
+   "uniform_numeric": 0.01595379181698185,
+   "uniform_exact": 0.015545280612244902,
+   "uniform_error_pct": 2.6278792575488485,
+   "h_mm": 1.0
+  },
+  {
+   "point_numeric": 0.07980837708773388,
+   "point_exact": 0.0791714640380602,
+   "point_error_pct": 0.804472997199454,
+   "uniform_numeric": 0.015780990696317398,
+   "uniform_exact": 0.015545280612244902,
+   "uniform_error_pct": 1.516280663900197,
+   "h_mm": 0.5
+  }
+ ],
+ "examples": [
+  {
+   "depth_mm": 1.51,
+   "diameter_mm": 110.2,
+   "peak_strain_pct": 0.12,
+   "pdr_suitable": true,
+   "pdr_success_probability": 1.0,
+   "method": "push repair",
+   "reasons": [
+    "peak strain 0.12% is below the limit 0.80%",
+    "rear side is accessible, so the dent can be pushed out with rods"
+   ],
+   "pull_force_n": 153.9,
+   "glue_tab_diameter_mm": 0.0,
+   "pulls": 0,
+   "manual_check": false,
+   "case": "Shallow door dent, rear access"
+  },
+  {
+   "depth_mm": 1.81,
+   "diameter_mm": 124.1,
+   "peak_strain_pct": 0.14,
+   "pdr_suitable": true,
+   "pdr_success_probability": 1.0,
+   "method": "glue-pull",
+   "reasons": [
+    "peak strain 0.14% is below the limit 0.80%",
+    "no rear access: glue-pull with a 20 mm tab, about 2 pulls"
+   ],
+   "pull_force_n": 153.9,
+   "glue_tab_diameter_mm": 19.8,
+   "pulls": 2,
+   "manual_check": false,
+   "case": "Shallow roof dent, no rear access"
+  },
+  {
+   "depth_mm": 6.01,
+   "diameter_mm": 42.6,
+   "peak_strain_pct": 16.1,
+   "pdr_suitable": false,
+   "pdr_success_probability": 0.0,
+   "method": "stud-pull + refinish",
+   "reasons": [
+    "peak strain 16.10% exceeds the limit 0.80%: paint is likely to crack",
+    "refinishing is required, so welded studs can be used"
+   ],
+   "pull_force_n": 153.9,
+   "glue_tab_diameter_mm": 0.0,
+   "pulls": 6,
+   "manual_check": false,
+   "case": "Sharp crease"
+  },
+  {
+   "depth_mm": 3.01,
+   "diameter_mm": 94.3,
+   "peak_strain_pct": 0.56,
+   "pdr_suitable": true,
+   "pdr_success_probability": 0.96,
+   "method": "stud-pull + refinish",
+   "reasons": [
+    "paint already damaged",
+    "refinishing is required, so welded studs can be used"
+   ],
+   "pull_force_n": 153.9,
+   "glue_tab_diameter_mm": 0.0,
+   "pulls": 3,
+   "manual_check": false,
+   "case": "Dent with damaged paint"
+  }
+ ],
+ "repair_constants": {
+  "collapse_force_n_0.7mm_200MPa": 153.9,
+  "glue_tab_area_mm2": 308.0
+ }
+}
